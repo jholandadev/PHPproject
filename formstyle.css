@@ -1,0 +1,76 @@
+.formbody{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, blue, white);
+
+}
+.box{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(0, 0 , 0, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    width: 20%;
+    color: white;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    letter-spacing: 2px;
+   
+}
+.inputbox{
+    position:relative
+}
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: smaller;
+    color: aliceblue;
+    
+}
+.labelimput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputuser:focus ~ .labelimput,
+.inputuser:valid ~.labelimput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+
+}
+.inputdate{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: larger;
+
+}
+#submit{
+    background-image: linear-gradient( to right ,blue, purple );
+    width: 100%;
+    border: none;
+    padding:15px;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient( to right, rgb(25, 38, 112) , rgb(221, 32, 64));
+}
